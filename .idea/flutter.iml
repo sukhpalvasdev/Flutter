@@ -6,6 +6,8 @@
       <excludeFolder url="file://$MODULE_DIR$/00_module/counter_app_template/build" />
       <excludeFolder url="file://$MODULE_DIR$/01_module/hello_app/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/01_module/hello_app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/01_module/quiz_app/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/01_module/quiz_app/build" />
       <excludeFolder url="file://$MODULE_DIR$/flutter_app/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/flutter_app/build" />
     </content>

@@ -46,7 +46,7 @@ class _MyAppState extends State<MyApp> {
         {'text': 'Speed eater', 'score': 10},
         {'text': 'Regimented - Pace Driven by Your Schedule', 'score': 7},
         {'text': 'Chameleon - Adaptive', 'score': 5},
-        {'text': 'Slow eater',  'score': 2}
+        {'text': 'Slow eater', 'score': 2}
       ],
     },
   ];
@@ -54,7 +54,7 @@ class _MyAppState extends State<MyApp> {
   var _questionIndex = 0;
   var _totalScore = 0;
 
-  void _resetQuiz(){
+  void _resetQuiz() {
     setState(() {
       _questionIndex = 0;
       _totalScore = 0;
@@ -62,7 +62,6 @@ class _MyAppState extends State<MyApp> {
   }
 
   void _answerQuestion(int score) {
-
     _totalScore += score;
 
     setState(() {
@@ -76,14 +75,16 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Find Devil in You!'),
+          title: Text(
+            'Find Devil in You!',
+          ),
         ),
         body: _questionIndex < _questions.length
             ? Quiz(
-          answerQuestion: _answerQuestion,
-          questionIndex: _questionIndex,
-          questions: _questions,
-        )
+                answerQuestion: _answerQuestion,
+                questionIndex: _questionIndex,
+                questions: _questions,
+              )
             : Result(_totalScore, _resetQuiz),
       ),
     );
